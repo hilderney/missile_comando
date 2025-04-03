@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missile Command</title>
+</head>
+
+<body>
+  <div id="game-config">
+    <!-- Tela de Configurações -->
+    <div id="settings-screen" class="settings-overlay">
+      <div class="settings-box">
+        <h2>Configurações</h2>
+
+        <div class="form-group">
+          <label>Nome do Jogador:</label>
+          <input type="text" id="player-name" maxlength="20">
+        </div>
+
+        <div class="form-group">
+          <label>Resolução:</label>
+          <select id="resolution">
+            <option value="1">320 x 160</option>
+            <option value="2">640 x 320</option>
+            <option value="3">800 x 600</option>
+            <option value="4">1024 x 768</option>
+            <option value="5">1280 x 720</option>
+            <option value="6">1600 x 900</option>
+            <option value="7">1920 x 1080</option>
+            <option value="8">2560 x 1440</option>
+            <option value="9">3840 x 2160</option>
+          </select>
+        </div>
+
+        <button id="start-game">Iniciar Jogo</button>
+      </div>
+    </div>
+  </div>
+  <div id="game-container" class="hidden">
+    <canvas id="game-canvas"></canvas>
+  </div>
+</body>
+
+</html>
